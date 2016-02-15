@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'roman/numeral/converter/version'
+require 'roman_numeral_converter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "roman-numeral-converter"
-  spec.version       = Roman::Numeral::Converter::VERSION
+  spec.name          = "roman_numeral_converter"
+  spec.version       = RomanNumeralConverter::VERSION
   spec.authors       = ["Peter Melling"]
   spec.email         = ["pjmelling@gmail.com"]
 

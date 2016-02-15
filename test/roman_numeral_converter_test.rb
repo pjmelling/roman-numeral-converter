@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class Roman::Numeral::ConverterTest < Minitest::Test
+class RomanNumeralConverterTest < Minitest::Test
   def test_that_it_has_a_version_number
-    refute_nil ::Roman::Numeral::Converter::VERSION
+    refute_nil ::RomanNumeralConverter::VERSION
   end
 
   def test_it_does_something_useful
