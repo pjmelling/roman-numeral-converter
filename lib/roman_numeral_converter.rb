@@ -1,5 +1,9 @@
 require "roman_numeral_converter/version"
 
 module RomanNumeralConverter
-  # Your code goes here...
+  class Converter
+    def convert(i)
+      'I'
+    end
+  end
 end

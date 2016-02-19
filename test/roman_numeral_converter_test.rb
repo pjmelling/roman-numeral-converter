@@ -5,7 +5,8 @@ class RomanNumeralConverterTest < Minitest::Test
     refute_nil ::RomanNumeralConverter::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_converts_1_to_I
+    converter = RomanNumeralConverter::Converter.new
+    assert_equal converter.convert(1), 'I'
   end
 end
