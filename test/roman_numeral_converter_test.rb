@@ -9,4 +9,9 @@ class RomanNumeralConverterTest < Minitest::Test
     converter = RomanNumeralConverter::Converter.new
     assert_equal converter.convert(1), 'I'
   end
+
+  def test_it_converts_2_to_II
+    converter = RomanNumeralConverter::Converter.new
+    assert_equal converter.convert(2), 'II'
+  end
 end
