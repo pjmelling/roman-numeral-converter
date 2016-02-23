@@ -1,31 +1,26 @@
 require "roman_numeral_converter/version"
 
 module RomanNumeralConverter
+  TALLY_TABLE = [
+    [1, 'I'],
+    [4, 'IV'],
+    [5, 'V'],
+    [9, 'IX'],
+    [10, 'X'],
+  ]
+
   class Converter
     def convert(n)
       result = ''
 
-      while n >= 10
-        result << 'X'
-        n -= 10
+      RomanNumeralConverter::TALLY_TABLE.reverse.each do |p|
+        while n >= p[0] 
+          result << p[1]
+          n -= p[0]
+        end
       end
-
-      while n >= 9
-        result << 'IX'
-        n -= 9
-      end
-
-      while n >= 5
-        result << 'V'
-        n -= 5
-      end
-
-      while n >= 4
-        result << 'IV'
-        n -= 4
-      end
-
-      result << 'I' * n
+  
+      result
     end
   end
 end
