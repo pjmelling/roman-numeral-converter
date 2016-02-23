@@ -1,22 +1,22 @@
 require "roman_numeral_converter/version"
 
 module RomanNumeralConverter
-  TALLY_TABLE = [
-    [1, 'I'],
-    [4, 'IV'],
-    [5, 'V'],
-    [9, 'IX'],
-    [10, 'X'],
-  ]
-
   class Converter
+    NUMERAL_MAPPINGS = [
+      [10, 'X'],
+      [9, 'IX'],
+      [5, 'V'],
+      [4, 'IV'],
+      [1, 'I'],
+    ]
+
     def convert(n)
       result = ''
 
-      RomanNumeralConverter::TALLY_TABLE.reverse.each do |p|
-        while n >= p[0] 
-          result << p[1]
-          n -= p[0]
+      NUMERAL_MAPPINGS.each do |numeral, glyph|
+        while n >= numeral 
+          result << glyph
+          n -= numeral
         end
       end
   
