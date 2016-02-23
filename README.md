@@ -1,5 +1,9 @@
 # RomanNumeralConverter
 
+This gem is the code kata by Jim Weirich from his Roman Numerals Kata talk to the Boston Ruby Group.
+
+The video of the talk is here -> [video]
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/roman_numeral_converter`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
@@ -39,3 +43,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
+[video] https://www.youtube.com/watch?v=983zk0eqYLY
